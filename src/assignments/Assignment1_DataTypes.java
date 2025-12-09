@@ -65,6 +65,7 @@ public class Assignment1_DataTypes {
 		//Distance between two cities: 200.5
 		double distanceBetweenCities = 200.5;
 		
+		//Print 
 		System.out.println("""
 				temperature: %s
 				hasOrderPlaced: %s
