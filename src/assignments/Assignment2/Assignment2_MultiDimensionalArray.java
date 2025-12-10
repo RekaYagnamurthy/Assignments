@@ -1,4 +1,4 @@
-package assignments;
+package assignments.Assignment2;
 
 public class Assignment2_MultiDimensionalArray {
 
