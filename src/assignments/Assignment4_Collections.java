@@ -156,38 +156,37 @@ public class Assignment4_Collections {
     testData.put("ProductDetails_Row3", productDetails_row3); 
 
     
-  //---------Store all maps in a List----------------
-	  
-  	List<Map<String, String>> allData = new ArrayList<Map<String, String>>();
-       allData.add(studentDetails_row1);
-       allData.add(studentDetails_row2);
-       allData.add(studentDetails_row3);
-       
-       allData.add(employeeDetails_row1);
-       allData.add(employeeDetails_row2);
-       allData.add(employeeDetails_row3);
-       
-       allData.add(productDetails_row1);
-       allData.add(productDetails_row2);
-       allData.add(productDetails_row3);
+ // ---------- Create Lists for Each Category ----------
+    List<Map<String, String>> studentList = new ArrayList<>();
+    studentList.add(studentDetails_row1);
+    studentList.add(studentDetails_row2);
+    studentList.add(studentDetails_row3);
 
+    List<Map<String, String>> empList = new ArrayList<>();
+    empList.add(employeeDetails_row1);
+    empList.add(employeeDetails_row2);
+    empList.add(employeeDetails_row3);
 
-  // ------------------ Print ALL DATA ------------------
-       
-       System.out.println("===== STUDENT DETAILS =====");
-       System.out.println(allData.get(0));
-       System.out.println(allData.get(1));
-       System.out.println(allData.get(2));
+    List<Map<String, String>> productList = new ArrayList<>();
+    productList.add(productDetails_row1);
+    productList.add(productDetails_row2);
+    productList.add(productDetails_row3);
 
-       System.out.println("\n===== EMPLOYEE DETAILS =====");
-       System.out.println(allData.get(3));
-       System.out.println(allData.get(4));
-       System.out.println(allData.get(5));
+    // ---------- Store All Lists in a Master Map ----------
+    Map<String, List<Map<String, String>>> data = new LinkedHashMap<>();
+    data.put("StudentData", studentList);
+    data.put("EmployeeData", empList);
+    data.put("ProductData", productList);
 
-       System.out.println("\n===== PRODUCT DETAILS =====");
-       System.out.println(allData.get(6));
-       System.out.println(allData.get(7));
-       System.out.println(allData.get(8));
+    // ---------- Print All Data ----------
+    System.out.println("===== STUDENT DATA =====");
+    System.out.println(data.get("StudentData"));
+
+    System.out.println("\n===== EMPLOYEE DATA =====");
+    System.out.println(data.get("EmployeeData"));
+
+    System.out.println("\n===== PRODUCT DATA =====");
+    System.out.println(data.get("ProductData"));
     
   
   //Print the data from Product Details > Supplier Name > Office Depot
