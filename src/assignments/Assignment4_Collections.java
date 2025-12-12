@@ -174,22 +174,20 @@ public class Assignment4_Collections {
 
   // ------------------ Print ALL DATA ------------------
        
-    System.out.println("===== ALL DATA FROM 3 TESTCASES =====");
-    System.out.println("===== STUDENT DETAILS =====");
-    System.out.println(testData.get("StudentDetails_Row1"));
-    System.out.println(testData.get("StudentDetails_Row2"));
-    System.out.println(testData.get("StudentDetails_Row3"));
+       System.out.println("===== STUDENT DETAILS =====");
+       System.out.println(allData.get(0));
+       System.out.println(allData.get(1));
+       System.out.println(allData.get(2));
 
-    System.out.println("\n===== EMPLOYEE DETAILS =====");
-    System.out.println(testData.get("EmployeeDetails_Row1"));
-    System.out.println(testData.get("EmployeeDetails_Row2"));
-    System.out.println(testData.get("EmployeeDetails_Row3"));
+       System.out.println("\n===== EMPLOYEE DETAILS =====");
+       System.out.println(allData.get(3));
+       System.out.println(allData.get(4));
+       System.out.println(allData.get(5));
 
-    System.out.println("\n===== PRODUCT DETAILS =====");
-    System.out.println(testData.get("ProductDetails_Row1"));
-    System.out.println(testData.get("ProductDetails_Row2"));
-    System.out.println(testData.get("ProductDetails_Row3"));
-
+       System.out.println("\n===== PRODUCT DETAILS =====");
+       System.out.println(allData.get(6));
+       System.out.println(allData.get(7));
+       System.out.println(allData.get(8));
     
   
   //Print the data from Product Details > Supplier Name > Office Depot
